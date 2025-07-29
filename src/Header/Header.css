@@ -1,0 +1,15 @@
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+img {
+    height: 4vw;
+}
+
+#logo {
+    padding-right: 3vw;
+}
