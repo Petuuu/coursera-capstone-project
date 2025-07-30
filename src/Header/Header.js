@@ -4,15 +4,15 @@ function Header() {
     return (
         <header id="header">
             <nav>
-                <ul>
+                <menu>
                     <li id="logo"><img src="nav-logo.svg" alt="Little Lemon logo" /></li>
-                    <li><a href="#header"> Home </a></li>
-                    <li><a href="#about"> About </a></li>
-                    <li><a href="#menu"> Menu </a></li>
-                    <li><a href="#reservations"> Reservations </a></li>
-                    <li><a href="#order"> Order online </a></li>
-                    <li><a href="login"> Login </a></li>
-                </ul>
+                    <li><a href="#header"> HOME </a></li>
+                    <li><a href="#about"> ABOUT </a></li>
+                    <li><a href="#menu"> MENU </a></li>
+                    <li><a href="#reservations"> RESERVATION </a></li>
+                    <li><a href="#order"> ORDER ONLINE </a></li>
+                    <li><a href="login"> LOGIN </a></li>
+                </menu>
             </nav>
         </header>
     )

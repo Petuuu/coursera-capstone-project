@@ -1,3 +1,23 @@
-body {
-  margin: 2.5vw 7vw;
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
+
+body, p {
+    font-family: 'Karla', sans-serif;
+    font-size: 1vw;
+    line-height: 1.5vw;
+}
+
+h1 {
+    font: 600 4vw 'Markazi Text', serif;
+    margin: 0;
+}
+
+h2 {
+    font: 600 3vw 'Markazi Text', serif;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 400;
+    margin: 0 0 2vw 0;
 }
