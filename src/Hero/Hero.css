@@ -5,8 +5,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
-    padding: 3vw 10vw;
+#hero #main {
+    padding: 4vw 10vw;
+}
+
+#hero #image {
+    padding: 0 10vw 0 0;
 }
 
 #hero #subheading {
@@ -14,7 +20,7 @@
 }
 
 #hero img {
-    height: 25vw;
+    height: 23vw;
 }
 
 #hero button {

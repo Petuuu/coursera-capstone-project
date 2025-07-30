@@ -1,6 +1,7 @@
 #header {
     background-color: #edefee;
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 2vw 10vw;
 }
@@ -24,7 +25,7 @@
     color: black;
 }
 
-#header #logo {
+#header img {
     padding: 0 10vw 0 0;
     height: 3vw;
 }
