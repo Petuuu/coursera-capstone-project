@@ -13,7 +13,11 @@ function Hero() {
                     The restaurant features a locally-sourced menu with daily specials.
                 </p>
 
-                <button type="button" id="reserve-button"><p> Reserve a table </p></button>
+                <button
+                    type="button"
+                    onClick={() => alert("Work in prosess!! Thank you for your patience.")}
+                    id="reserve-button"
+                ><p> Reserve a table </p></button>
             </section>
 
             <section id="image">
