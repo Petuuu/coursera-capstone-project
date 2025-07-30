@@ -12,10 +12,10 @@ h2 {
 }
 
 h3 {
-    font: 600 1vw 'Karla', sans-serif;
+    font: 600 1.2vw 'Karla', sans-serif;
 }
 
-p, a {
-    font: 400 1vw 'Karla', sans-serif;
+p:not(#specials), a:not(#header) {
+    font: 400 1.2vw 'Karla', sans-serif;
     line-height: 1.5vw;
 }

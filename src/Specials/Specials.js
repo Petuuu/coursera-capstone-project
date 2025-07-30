@@ -1,4 +1,4 @@
-import "./Highlights.css";
+import "./Specials.css";
 import Dish from "./Dish";
 
 function Specials() {

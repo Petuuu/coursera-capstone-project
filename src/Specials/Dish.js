@@ -7,18 +7,16 @@ function Dish({ img, alt, name, price, description, id}) {
 
             <section id="dish-heading">
                 <h3> {name} </h3>
-                <p id="price"> {price} </p>
+                <h3 id="price"> {price} </h3>
             </section>
 
             <section id="dish-description">
-                <p> {description} </p>
+                <p style={{fontSize: '1vw', lineHeight: '1.2vw'}}> {description} </p>
             </section>
 
-            <section>
-                <a id="order-link">
-                    <p style={{whiteSpace: 'no-wrap'}}> Order for delivery </p>
-                    <img src="delivery-icon.png" alt="Delivery icon" />
-                </a>
+            <section id="order-link">
+                <a href="" style={{whiteSpace: 'no-wrap', fontSize: '1vw'}}> Order for delivery </a>
+                <img src="delivery-icon.png" alt="Delivery icon" />
             </section>
         </section>
     )

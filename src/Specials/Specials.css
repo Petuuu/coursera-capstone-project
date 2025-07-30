@@ -43,10 +43,14 @@
     padding: 0 2vw 0 1vw;
 }
 
+#specials #price {
+    color: #DDBE25;
+}
+
 #specials #dish-description {
     color: #676767;
-    height: 10.5vw;
-    padding: 0 2vw 1.7vw 1vw;
+    height: 8.5vw;
+    padding: 0 2vw 0 1vw;
 }
 
 #specials #order-link {
@@ -55,10 +59,11 @@
     justify-content: left;
     align-items: center;
     white-space: nowrap;
-    gap: 0.7vw;
-    padding: 0 1vw;
+    text-decoration: underline;
+    gap: 0.6vw;
+    padding: 0 0 1vw 1vw;
 }
 
 #specials #order-link img {
-    width: 2vw;
+    width: 1.5vw;
 }
