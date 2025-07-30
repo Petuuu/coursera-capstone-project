@@ -5,7 +5,7 @@ function Hero() {
         <section id="hero">
             <section>
                 <h1>Little Lemon</h1>
-                <h3>Chicago</h3>
+                <p id="subheading">Chicago</p>
 
                 <p>
                     Little Lemon is a charming neighborhood bistro that serves simple <br />
@@ -13,7 +13,7 @@ function Hero() {
                     The restaurant features a locally-sourced menu with daily specials.
                 </p>
 
-                <button id="reserve-button"> <p>Reserve a table</p> </button>
+                <button type="button" id="reserve-button"><p> Reserve a table </p></button>
             </section>
 
             <section id="hero-image">
