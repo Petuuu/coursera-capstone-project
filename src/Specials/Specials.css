@@ -30,7 +30,6 @@
 #specials .dish {
     background-color: #edefee;
     overflow: hidden;
-    flex: 1;
     max-width: 22vw;
     border-radius: 1.5vw / 1.5vw;
 }
