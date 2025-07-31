@@ -1,14 +1,12 @@
 import './App.css';
-import Header from './Header/Header';
-import Hero from './Hero/Hero';
-import Specials from './Specials/Specials';
+import Header from './shared/ui/Header/Header';
+import MainPage from './pages/MainPage/MainPage';
 
 function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Specials />
+      <MainPage />
     </>
   );
 }
