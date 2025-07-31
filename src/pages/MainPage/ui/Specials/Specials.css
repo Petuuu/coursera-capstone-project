@@ -1,0 +1,68 @@
+#specials {
+    display: flex;
+    flex-direction: column;
+    padding: 4vw 10vw;
+}
+
+#specials #heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#specials #online-menu {
+    color: #EE9972;
+}
+
+#specials #dishes {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6vw;
+}
+
+#specials img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#specials .dish {
+    background-color: #edefee;
+    overflow: hidden;
+    max-width: 22vw;
+    border-radius: 1.5vw / 1.5vw;
+}
+
+#specials #dish-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw 0 1vw;
+}
+
+#specials #price {
+    color: #DDBE25;
+}
+
+#specials #dish-description {
+    color: #676767;
+    height: 8.5vw;
+    padding: 0 2vw 0 1vw;
+}
+
+#specials #order-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    white-space: nowrap;
+    text-decoration: underline;
+    gap: 0.6vw;
+    padding: 0 0 1vw 1vw;
+}
+
+#specials #order-link img {
+    width: 1.5vw;
+}

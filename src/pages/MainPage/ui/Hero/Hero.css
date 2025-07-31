@@ -1,0 +1,32 @@
+#hero {
+    background-color: #495E57;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero #main {
+    padding: 4vw 10vw;
+}
+
+#hero #image {
+    padding: 0 10vw 0 0;
+}
+
+#hero #subheading {
+    margin: 0 0 2vw 0;
+}
+
+#hero img {
+    height: 23vw;
+}
+
+#hero button {
+    background-color: #F4CE14;
+    margin: 2vw 0;
+    padding: 0.4vw 1.3vw;
+    border: none;
+    border-radius: 1.5vw / 1.5vw;
+}
