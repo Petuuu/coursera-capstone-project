@@ -1,5 +1,5 @@
 #hero {
-    background-color: #495E57;
+    background-color: var(--green);
     color: white;
 
     display: flex;
@@ -24,7 +24,7 @@
 }
 
 #hero button {
-    background-color: #F4CE14;
+    background-color: var(--yellow);
     margin: 2vw 0;
     padding: 0.4vw 1.3vw;
     border: none;

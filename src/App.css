@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
 
+:root {
+  --green: #495E57;
+  --yellow: #F4CE14;
+  --light-gray: #edefee;
+  --dark-gray: #676767;
+  --peach: #EE9972;
+}
+
 h1 {
     font: 600 4vw 'Markazi Text', serif;
     margin: 0;
@@ -15,7 +23,6 @@ h3 {
     font: 600 1.2vw 'Karla', sans-serif;
 }
 
-p:not(#specials), a:not(#header) {
-    font: 400 1.2vw 'Karla', sans-serif;
-    line-height: 1.5vw;
+p, a {
+    font: 400 1.2vw/1.5vw 'Karla', sans-serif;
 }
