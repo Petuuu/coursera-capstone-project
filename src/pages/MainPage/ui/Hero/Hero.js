@@ -2,10 +2,10 @@ import "./Hero.css";
 
 function Hero() {
     return (
-        <section id="hero">
-            <section id="main">
+        <section className="hero">
+            <section className="hero__main">
                 <h1>Little Lemon</h1>
-                <p id="subheading">Chicago</p>
+                <p id="hero__subheading">Chicago</p>
 
                 <p>
                     Little Lemon is a charming neighborhood bistro that serves simple <br />
@@ -16,11 +16,10 @@ function Hero() {
                 <button
                     type="button"
                     onClick={() => alert("Work in prosess!! Thank you for your patience.")}
-                    id="reserve-button"
                 ><p> Reserve a table </p></button>
             </section>
 
-            <section id="image">
+            <section>
                 <img src="hero-img.jpg" alt="A dish from Little Lemon" />
             </section>
         </section>

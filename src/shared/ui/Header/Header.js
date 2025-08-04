@@ -2,7 +2,7 @@ import "./Header.css";
 
 function Header() {
     return (
-        <header id="header">
+        <header className="header">
             <section>
                 <img src="nav-logo.svg" alt="Little Lemon logo" />
             </section>

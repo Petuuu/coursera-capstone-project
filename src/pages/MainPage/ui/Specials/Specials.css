@@ -1,40 +1,40 @@
-#specials {
+.specials {
     display: flex;
     flex-direction: column;
     padding: 4vw 10vw;
 }
 
-#specials #heading {
+.specials__heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 
-#specials #online-menu {
+.specials__online-menu {
     color: #EE9972;
 }
 
-#specials #dishes {
+.specials__dishes {
     display: flex;
     justify-content: space-between;
     padding-top: 6vw;
 }
 
-#specials img {
+.specials img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-#specials .dish {
+.dish {
     background-color: var(--light-gray);
     overflow: hidden;
     max-width: 22vw;
     border-radius: 1.5vw / 1.5vw;
 }
 
-#specials #dish-heading {
+.dish__heading {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,17 +42,17 @@
     padding: 0 2vw 0 1vw;
 }
 
-#specials #price {
+.dish__price {
     color: #DDBE25;
 }
 
-#specials #dish-description {
+.dish__description {
     color: var(--dark-gray);
     height: 8.5vw;
     padding: 0 2vw 0 1vw;
 }
 
-#specials #order-link {
+.dish__order-link {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -63,6 +63,6 @@
     padding: 0 0 1vw 1vw;
 }
 
-#specials #order-link img {
+.dish__order-link img {
     width: 1.5vw;
 }

@@ -1,4 +1,4 @@
-#hero {
+.hero {
     background-color: var(--green);
     color: white;
 
@@ -7,26 +7,24 @@
     align-items: center;
 }
 
-#hero #main {
+.hero__main {
     padding: 4vw 10vw;
 }
 
-#hero #image {
-    padding: 0 10vw 0 0;
-}
-
-#hero #subheading {
+.hero__subheading {
     margin: 0 0 2vw 0;
 }
 
-#hero img {
-    height: 23vw;
-}
-
-#hero button {
+.hero button {
     background-color: var(--yellow);
     margin: 2vw 0;
     padding: 0.4vw 1.3vw;
     border: none;
     border-radius: 1.5vw / 1.5vw;
+
+}
+
+.hero img {
+    height: 23vw;
+    padding: 0 10vw 0 0;
 }

@@ -1,4 +1,4 @@
-#header {
+.header {
     background-color: var(--light-gray);
     display: flex;
     flex-direction: row;
@@ -6,11 +6,11 @@
     padding: 2vw 10vw;
 }
 
-#header nav {
+.header nav {
     flex: 1;
 }
 
-#header menu {
+.header menu {
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -18,14 +18,14 @@
     margin: 0;
 }
 
-#header a {
+.header a {
     font-size: 1.2vw;
     font-weight: 700;
     text-decoration: none;
     color: black;
 }
 
-#header img {
+.header img {
     padding: 0 10vw 0 0;
     height: 3vw;
 }
