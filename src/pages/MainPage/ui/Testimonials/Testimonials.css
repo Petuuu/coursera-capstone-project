@@ -17,7 +17,7 @@
     background-color: var(--light-gray);
     height: 12vw;
     width: 19vw;
-    border-radius: 1.5vw / 1.5vw;
+    border-radius: var(--radius);
 }
 
 .testimonials__avatar {
