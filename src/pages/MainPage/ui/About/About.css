@@ -1,0 +1,16 @@
+.about {
+    background-color: var(--green);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.about__main {
+    padding: 4vw 0;
+}
+
+.about img {
+    width: 35vw;
+}
