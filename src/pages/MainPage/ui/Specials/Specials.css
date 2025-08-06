@@ -1,7 +1,7 @@
 .specials {
     display: flex;
     flex-direction: column;
-    padding: 4vw 10vw;
+    padding: var(--base-padding);
 }
 
 .specials__heading {

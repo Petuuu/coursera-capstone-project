@@ -8,7 +8,7 @@
 }
 
 .hero__main {
-    padding: 4vw 10vw;
+    padding: var(--base-padding);
 }
 
 .hero__button {
