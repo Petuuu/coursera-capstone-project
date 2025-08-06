@@ -6,7 +6,7 @@ function Hero() {
         <section className="hero">
             <section className="hero__main">
                 <h1>Little Lemon</h1>
-                <p id="hero__subheading">Chicago</p>
+                <p class="hero__subheading">Chicago</p>
 
                 <p>
                     Little Lemon is a charming neighborhood bistro that serves simple <br />
