@@ -21,16 +21,10 @@
     padding-top: 6vw;
 }
 
-.specials img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 .dish__card {
     background-color: var(--light-gray);
     overflow: hidden;
-    max-width: 22vw;
+    width: 22vw;
     border-radius: 1.5vw / 1.5vw;
 }
 

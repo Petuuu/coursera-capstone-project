@@ -22,7 +22,7 @@ function Specials() {
                     }
                 >
                     <Meta
-                        style={{ height: '6.5vw' }}
+                        style={{ minHeight: '6.5vw' }}
                         title={
                             <section style={{ display: 'flex', justifyContent: 'space-between'  }}>
                                 <h3> Greek salad </h3>
@@ -49,7 +49,7 @@ function Specials() {
                     }
                 >
                     <Meta
-                        style={{ height: '6.5vw' }}
+                        style={{ minHeight: '6.5vw' }}
                         title={
                             <section style={{ display: 'flex', justifyContent: 'space-between'  }}>
                                 <h3> Bruschetta </h3>
@@ -75,7 +75,7 @@ function Specials() {
                     }
                 >
                     <Meta
-                        style={{ height: '6.5vw' }}
+                        style={{ minHeight: '6.5vw' }}
                         title={
                             <section style={{ display: 'flex', justifyContent: 'space-between'  }}>
                                 <h3> Lemon dessert </h3>
