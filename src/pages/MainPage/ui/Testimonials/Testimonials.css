@@ -1,0 +1,26 @@
+.testimonials {
+    background-color: var(--light-peach);
+    padding: 4vw 10vw;
+}
+
+.testimonials__reviews {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6vw;
+}
+
+.testimonials__rating {
+    margin-bottom: 1vw;
+}
+
+.testimonials__review {
+    background-color: var(--light-gray);
+    height: 12vw;
+    width: 19vw;
+    border-radius: 1.5vw / 1.5vw;
+}
+
+.testimonials__avatar {
+    height: 3vw;
+    width: auto;
+}
