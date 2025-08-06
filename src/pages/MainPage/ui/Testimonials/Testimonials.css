@@ -1,6 +1,6 @@
 .testimonials {
     background-color: var(--light-peach);
-    padding: 4vw 10vw;
+    padding: var(--base-padding);
 }
 
 .testimonials__reviews {
