@@ -1,3 +1,4 @@
+import 'antd/dist/reset.css';
 import './App.css';
 import Header from './shared/ui/Header/Header';
 import MainPage from './pages/MainPage/MainPage';

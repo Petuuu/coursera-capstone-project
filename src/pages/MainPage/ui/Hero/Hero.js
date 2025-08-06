@@ -1,4 +1,5 @@
 import "./Hero.css";
+import { Button } from "antd";
 
 function Hero() {
     return (
@@ -13,10 +14,12 @@ function Hero() {
                     The restaurant features a locally-sourced menu with daily specials.
                 </p>
 
-                <button
-                    type="button"
+                <Button
+                    className="hero__button"
                     onClick={() => alert("Work in prosess!! Thank you for your patience.")}
-                ><p> Reserve a table </p></button>
+                >
+                    Reserve a table
+                </Button>
             </section>
 
             <section>

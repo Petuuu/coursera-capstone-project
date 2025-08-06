@@ -12,7 +12,7 @@
 }
 
 .specials__online-menu {
-    color: #EE9972;
+    color: var(--peach);
 }
 
 .specials__dishes {
@@ -27,40 +27,20 @@
     display: block;
 }
 
-.dish {
+.dish__card {
     background-color: var(--light-gray);
     overflow: hidden;
     max-width: 22vw;
     border-radius: 1.5vw / 1.5vw;
 }
 
-.dish__heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2vw 0 1vw;
-}
-
-.dish__price {
-    color: #DDBE25;
-}
-
-.dish__description {
-    color: var(--dark-gray);
-    height: 8.5vw;
-    padding: 0 2vw 0 1vw;
-}
-
 .dish__order-link {
     display: flex;
-    flex-direction: row;
     justify-content: left;
-    align-items: center;
-    white-space: nowrap;
     text-decoration: underline;
     gap: 0.6vw;
-    padding: 0 0 1vw 1vw;
+    padding-top: 1vw;
+    color: var(--peach);
 }
 
 .dish__order-link img {

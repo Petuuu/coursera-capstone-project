@@ -15,13 +15,13 @@
     margin: 0 0 2vw 0;
 }
 
-.hero button {
+.hero__button {
     background-color: var(--yellow);
     margin: 2vw 0;
-    padding: 0.4vw 1.3vw;
+    padding: 2vw 1.7vw;
     border: none;
     border-radius: 1.5vw / 1.5vw;
-
+    font: 400 1.2vw/1.5vw 'Karla', sans-serif;
 }
 
 .hero img {

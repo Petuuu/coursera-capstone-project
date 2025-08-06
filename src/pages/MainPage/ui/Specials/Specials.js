@@ -1,5 +1,7 @@
 import "./Specials.css";
-import Dish from "./Dish";
+import { Card } from "antd";
+
+const { Meta } = Card;
 
 function Specials() {
     return (
@@ -10,28 +12,85 @@ function Specials() {
             </section>
 
             <section className="specials__dishes">
-                <Dish
-                    img="greek-salad.jpg"
-                    name="Greek salad"
-                    price="12,99€"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                <Card
+                    className="dish__card"
+                    cover={
+                        <img
+                            src="greek-salad.jpg"
+                            alt="Greek salad"
+                        />
+                    }
+                >
+                    <Meta
+                        style={{ height: '6.5vw' }}
+                        title={
+                            <section style={{ display: 'flex', justifyContent: 'space-between'  }}>
+                                <h3> Greek salad </h3>
+                                <h3 style={{ color: '#DDBE25' }}> 12,99€ </h3>
+                            </section>
+                        }
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                     minim veniam, quis nostrud exercitation ullamco laboris nisi ut"
-                />
+                    />
 
-                <Dish
-                    img="bruschetta.jpg"
-                    name="Bruschetta"
-                    price="5,99€"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
-                />
+                    <section className="dish__order-link">
+                        <a href="" style={{ fontSize: '0.8vw', color: 'var(--peach)' }}> Order for delivery </a>
+                        <img src="delivery-icon.png" alt="Delivery icon" />
+                    </section>
+                </Card>
 
-                <Dish
-                    img="lemon-dessert.png"
-                    name="Lemon dessert"
-                    price="12,00€"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                <Card
+                    className="dish__card"
+                    cover={
+                        <img
+                            src="bruschetta.jpg"
+                            alt="Bruschetta"
+                        />
+                    }
+                >
+                    <Meta
+                        style={{ height: '6.5vw' }}
+                        title={
+                            <section style={{ display: 'flex', justifyContent: 'space-between'  }}>
+                                <h3> Bruschetta </h3>
+                                <h3 style={{ color: '#DDBE25' }}> 5,99€ </h3>
+                            </section>
+                        }
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                    />
+
+                    <section className="dish__order-link">
+                        <a href="" style={{ fontSize: '0.8vw', color: 'var(--peach)' }}> Order for delivery </a>
+                        <img src="delivery-icon.png" alt="Delivery icon" />
+                    </section>
+                </Card>
+
+                <Card
+                    className="dish__card"
+                    cover={
+                        <img
+                            src="lemon-dessert.png"
+                            alt="Lemon dessert"
+                        />
+                    }
+                >
+                    <Meta
+                        style={{ height: '6.5vw' }}
+                        title={
+                            <section style={{ display: 'flex', justifyContent: 'space-between'  }}>
+                                <h3> Lemon dessert </h3>
+                                <h3 style={{ color: '#DDBE25' }}> 12,00€ </h3>
+                            </section>
+                        }
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                     minim veniam, quis nostrud"
-                />
+                    />
+
+                    <section className="dish__order-link">
+                        <a href="" style={{ fontSize: '0.8vw', color: 'var(--peach)' }}> Order for delivery </a>
+                        <img src="delivery-icon.png" alt="Delivery icon" />
+                    </section>
+                </Card>
             </section>
         </section>
     )
