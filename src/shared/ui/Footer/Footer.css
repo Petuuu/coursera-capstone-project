@@ -1,14 +1,6 @@
 .footer {
-    background-color: var(--light-gray);
-    display: flex;
-    gap: 17vw;
+    background-color: var(--highlight);
     padding: var(--base-padding);
-}
-
-.footer__links {
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
 }
 
 .footer img {
@@ -18,5 +10,7 @@
 
 .footer a {
     display: block;
+    text-decoration: none;
+    color: black;
     margin: 0
 }

@@ -1,60 +1,52 @@
 import './Testimonials.css';
-import { Avatar, Card } from 'antd';
+import { Flex, Avatar, Card } from 'antd';
 
 const { Meta } = Card;
+const reviews = [
+    {
+        rating: 4,
+        avatar: "reviewer1.png",
+        name: "Kas",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    },
+    {
+        rating: 3,
+        avatar: "reviewer2.jpeg",
+        name: "Maria",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+    },
+    {
+        rating: 5,
+        avatar: "reviewer3.png",
+        name: "kas",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim"
+    },
+    {
+        rating: 4,
+        avatar: "reviewer4.png",
+        name: "Amy",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing"
+    }
+]
 
 function Testimonials() {
     return (
         <section className="testimonials">
             <h2> Testimonials </h2>
 
-            <section className="testimonials__reviews">
-                <Card className="testimonials__review">
-                    <section className="testimonials__rating">
-                        Wow!!! 4/5
-                    </section>
-                    <Meta
-                        avatar={<Avatar className="testimonials__avatar" src="/reviewer1.png" />}
-                        title="Kas"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-                    />
-                </Card>
+            <Flex justify="space-between" className="testimonials__reviews">
+                {reviews.map(({ rating, avatar, name, description }) => (
+                    <Card className="review__card">
+                        <section className="review__rating"> Rating: {rating}/5 </section>
 
-                <Card className="testimonials__review">
-                    <section className="testimonials__rating">
-                        Wow!!! 3/5
-                    </section>
-                    <Meta
-                        avatar={<Avatar className="testimonials__avatar" src="/reviewer2.jpeg" />}
-                        title="Maria"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
-                    />
-                </Card>
-
-                <Card className="testimonials__review">
-                    <section className="testimonials__rating">
-                        Wow!!! 5/5
-                    </section>
-                    <Meta
-                        avatar={<Avatar className="testimonials__avatar" src="/reviewer3.png" />}
-                        title="Aksu"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
-                    />
-                </Card>
-
-                <Card className="testimonials__review">
-                    <section className="testimonials__rating">
-                        Wow!!! 4/5
-                    </section>
-                    <Meta
-                        avatar={<Avatar className="testimonials__avatar" src="/reviewer4.png" />}
-                        title="Amy"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing"
-                    />
-                </Card>
-            </section>
+                        <Meta
+                            avatar={<Avatar className="review__avatar" src={avatar} />}
+                            title={name}
+                            description={description}
+                        />
+                    </Card>
+                ))}
+            </Flex>
         </section>
     )
 }

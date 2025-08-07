@@ -1,41 +1,58 @@
 import './Footer.css';
+import { Flex } from 'antd';
+
+const footerLinks = [
+    {
+        className: "footer__nav",
+        title: "Navigation",
+        links: [
+            { href: "#header", label: "Home" },
+            { href: "#about", label: "About" },
+            { href: "#menu", label: "Menu" },
+            { href: "#reservations", label: "Reservations" },
+            { href: "#order", label: "Order Online" },
+            { href: "#login", label: "Login" }
+        ]
+    },
+    {
+        className: "footer__contact",
+        title: "Contact",
+        links: [
+            { href: "", label: "Address" },
+            { href: "", label: "Phone number" },
+            { href: "", label: "Email" }
+        ]
+    },
+    {
+        className: "footer__social",
+        title: "Social",
+        links: [
+            { href: "", label: "LinkedIn" },
+            { href: "", label: "Instagram" },
+            { href: "", label: "Facebook" },
+            { href: "", label: "Twitter" }
+        ]
+    }
+];
 
 function Footer() {
     return (
-        <footer className="footer">
+        <Flex gap="17vw" className="footer">
             <img src="footer-logo.png" alt="Logo" />
 
-            <section className="footer__links">
-                <section className="footer__nav">
-                    <h3> Navigation </h3>
+            <Flex gap="10vw">
+                {footerLinks.map(({ className, title, links }) => (
+                    <section className={className}>
+                        <h3> {title} </h3>
 
-                    <a> Home </a>
-                    <a> About </a>
-                    <a> Menu </a>
-                    <a> Reservations </a>
-                    <a> Order online </a>
-                    <a> Login </a>
-                </section>
-
-                <section className="footer__contact">
-                    <h3> Contact </h3>
-
-                    <a> Address </a>
-                    <a> Phone number </a>
-                    <a> Email </a>
-                </section>
-
-                <section className="footer__social">
-                    <h3> Social </h3>
-
-                    <a>LinkedIn</a>
-                    <a>Instagram</a>
-                    <a>Facebook</a>
-                    <a>Twitter</a>
-                </section>
-            </section>
-        </footer>
-    )
+                        {links.map(({ href, label }) => (
+                            <a href={href}> {label} </a>
+                        ))}
+                    </section>
+                ))}
+            </Flex>
+        </Flex>
+    );
 }
 
 export default Footer;

@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
 
 :root {
-  --green: #495E57;
-  --yellow: #F4CE14;
-  --light-gray: #edefee;
-  --dark-gray: #676767;
-  --peach: #EE9972;
+    --primary1: #495E57;
+    --primary2: #F4CE14;
+    --secondary1: #EE9972;
+    --secondary2: #FBDABB;
+    --highlight: #edefee;
+
+    --base-padding: 4vw 10vw;
+    --radius: 1.5vw / 1.5vw;
 }
 
 h1 {
@@ -32,5 +35,5 @@ img {
 }
 
 .subheading {
-    margin: 0 0 2vw 0;
+    margin-bottom: 2vw;
 }

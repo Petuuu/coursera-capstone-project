@@ -1,0 +1,42 @@
+.specials {
+    padding: var(--base-padding);
+}
+
+.specials__online-menu {
+    color: var(--secondary1);
+    text-decoration: underline;
+}
+
+.specials__dishes {
+    padding-top: 6vw;
+}
+
+.dish__card {
+    background-color: var(--highlight);
+    width: 22vw;
+    border-radius: var(--radius);
+}
+
+.dish__text {
+    min-height: 6.5vw;
+}
+
+.dish__price {
+    color: #DDBE25;
+}
+
+.dish__order {
+    text-decoration: underline;
+    gap: 0.6vw;
+    padding-top: 1vw;
+    color: var(--secondary1);
+}
+
+.dish__order a {
+    font-size: 0.8vw;
+    color: var(--secondary1)
+}
+
+.dish__order img {
+    width: 1.5vw;
+}

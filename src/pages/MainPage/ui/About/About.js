@@ -1,8 +1,9 @@
 import './About.css';
+import { Flex } from 'antd';
 
 function About() {
     return (
-        <section className="about">
+        <Flex justify="space-between" align="center" className="about">
             <section className="about__main">
                 <h2> Little Lemon </h2>
                 <p className='subheading'> Chicago </p>
@@ -23,7 +24,7 @@ function About() {
             <section>
                 <img src="chef.jpg" alt="A chef from Little Lemon making a dish" />
             </section>
-        </section>
+        </Flex>
     )
 }
 
