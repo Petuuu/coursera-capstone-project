@@ -18,7 +18,7 @@ function Hero() {
                 </p>
 
                 <Button
-                    className="hero__button"
+                    className="button"
                     onClick={() => navigate("/reservation")}
                 >
                     Reserve a table

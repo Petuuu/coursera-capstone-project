@@ -1,0 +1,28 @@
+.reservation {
+    background-color: var(--highlight);
+    padding: var(--base-padding);
+}
+
+.reservation__form-container {
+    background-color: var(--primary1);
+    border-radius: var(--radius);
+    color: white;
+    margin-top: 2vw;
+    min-height: 42vw;
+    width: 60vw;
+    padding: 4vw 5vw;
+}
+
+.reservation__form-container .ant-form-item-label > label {
+    color: white;
+}
+
+.reservation__form-container .ant-form-item-label > label,
+.reservation__form-container .ant-input,
+.reservation__form-container .ant-select-selector,
+.reservation__form-container .ant-select-dropdown .ant-select-item,
+.reservation__form-container .ant-input-textarea textarea
+ {
+    font-size: 1vw;
+    min-height: 2vw;
+ }
