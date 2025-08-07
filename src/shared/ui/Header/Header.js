@@ -2,7 +2,7 @@ import "./Header.css";
 import { Flex } from 'antd';
 
 const navLinks = [
-    { href: "#header", label: "HOME" },
+    { href: "/", label: "HOME" },
     { href: "#about", label: "ABOUT" },
     { href: "#menu", label: "MENU" },
     { href: "#reservations", label: "RESERVATIONS" },

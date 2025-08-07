@@ -1,7 +1,10 @@
 import "./Hero.css";
 import { Flex, Button } from "antd";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+    const navigate = useNavigate();
+
     return (
         <Flex justify="space-between" align="center" className="hero">
             <section className="hero__main">
@@ -16,7 +19,7 @@ function Hero() {
 
                 <Button
                     className="hero__button"
-                    onClick={() => alert("Work in prosess!! Thank you for your patience.")}
+                    onClick={() => navigate("/reservation")}
                 >
                     Reserve a table
                 </Button>
