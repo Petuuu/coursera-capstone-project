@@ -8,7 +8,7 @@ function Specials() {
         <section className="specials">
             <section className="specials__heading">
                 <h2> Specials </h2>
-                <a href="" className="specials__online-menu"> Online menu </a>
+                <a href=""> Online menu </a>
             </section>
 
             <section className="specials__dishes">
@@ -22,19 +22,19 @@ function Specials() {
                     }
                 >
                     <Meta
-                        style={{ minHeight: '6.5vw' }}
+                        className="dish__text"
                         title={
-                            <section style={{ display: 'flex', justifyContent: 'space-between'  }}>
+                            <section className="dish__title">
                                 <h3> Greek salad </h3>
-                                <h3 style={{ color: '#DDBE25' }}> 12,99€ </h3>
+                                <h3 className="dish__price"> 12,99€ </h3>
                             </section>
                         }
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                     minim veniam, quis nostrud exercitation ullamco laboris nisi ut"
                     />
 
-                    <section className="dish__order-link">
-                        <a href="" style={{ fontSize: '0.8vw', color: 'var(--secondary1)' }}> Order for delivery </a>
+                    <section className="dish__order">
+                        <a href=""> Order for delivery </a>
                         <img src="delivery-icon.png" alt="Delivery icon" />
                     </section>
                 </Card>
@@ -49,18 +49,18 @@ function Specials() {
                     }
                 >
                     <Meta
-                        style={{ minHeight: '6.5vw' }}
+                        className="dish__text"
                         title={
-                            <section style={{ display: 'flex', justifyContent: 'space-between'  }}>
+                            <section className="dish__title">
                                 <h3> Bruschetta </h3>
-                                <h3 style={{ color: '#DDBE25' }}> 5,99€ </h3>
+                                <h3 className="dish__price"> 5,99€ </h3>
                             </section>
                         }
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
                     />
 
-                    <section className="dish__order-link">
-                        <a href="" style={{ fontSize: '0.8vw', color: 'var(--secondary1)' }}> Order for delivery </a>
+                    <section className="dish__order">
+                        <a href=""> Order for delivery </a>
                         <img src="delivery-icon.png" alt="Delivery icon" />
                     </section>
                 </Card>
@@ -75,19 +75,19 @@ function Specials() {
                     }
                 >
                     <Meta
-                        style={{ minHeight: '6.5vw' }}
+                        className="dish__text"
                         title={
-                            <section style={{ display: 'flex', justifyContent: 'space-between'  }}>
+                            <section className="dish__title">
                                 <h3> Lemon dessert </h3>
-                                <h3 style={{ color: '#DDBE25' }}> 12,00€ </h3>
+                                <h3 className="dish__price"> 12,00€ </h3>
                             </section>
                         }
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                     minim veniam, quis nostrud"
                     />
 
-                    <section className="dish__order-link">
-                        <a href="" style={{ fontSize: '0.8vw', color: 'var(--secondary1)' }}> Order for delivery </a>
+                    <section className="dish__order">
+                        <a href=""> Order for delivery </a>
                         <img src="delivery-icon.png" alt="Delivery icon" />
                     </section>
                 </Card>

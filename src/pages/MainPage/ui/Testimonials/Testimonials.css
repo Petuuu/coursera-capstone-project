@@ -15,7 +15,7 @@
 
 .testimonials__review {
     background-color: var(--highlight);
-    height: 12vw;
+    min-height: 12vw;
     width: 19vw;
     border-radius: var(--radius);
 }

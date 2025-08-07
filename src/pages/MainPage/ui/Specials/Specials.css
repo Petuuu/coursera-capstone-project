@@ -23,12 +23,24 @@
 
 .dish__card {
     background-color: var(--highlight);
-    overflow: hidden;
     width: 22vw;
     border-radius: var(--radius);
 }
 
-.dish__order-link {
+.dish__text {
+    min-height: 6.5vw;
+}
+
+.dish__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish__price {
+    color: #DDBE25;
+}
+
+.dish__order {
     display: flex;
     justify-content: left;
     text-decoration: underline;
@@ -37,6 +49,11 @@
     color: var(--secondary1);
 }
 
-.dish__order-link img {
+.dish__order a {
+    font-size: 0.8vw;
+    color: var(--secondary1)
+}
+
+.dish__order img {
     width: 1.5vw;
 }
