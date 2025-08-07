@@ -1,5 +1,14 @@
 import "./Header.css";
 
+const navLinks = [
+    { href: "#header", label: "HOME" },
+    { href: "#about", label: "ABOUT" },
+    { href: "#menu", label: "MENU" },
+    { href: "#reservations", label: "RESERVATIONS" },
+    { href: "#order", label: "ORDER ONLINE" },
+    { href: "#login", label: "LOGIN" }
+];
+
 function Header() {
     return (
         <header className="header">
@@ -9,12 +18,9 @@ function Header() {
 
             <nav>
                 <menu>
-                    <li><a href="#header"> HOME </a></li>
-                    <li><a href="#about"> ABOUT </a></li>
-                    <li><a href="#menu"> MENU </a></li>
-                    <li><a href="#reservations"> RESERVATION </a></li>
-                    <li><a href="#order"> ORDER ONLINE </a></li>
-                    <li><a href="#login"> LOGIN </a></li>
+                    {navLinks.map(({ href, label }) => (
+                        <li><a href={href}> {label} </a></li>
+                    ))}
                 </menu>
             </nav>
         </header>

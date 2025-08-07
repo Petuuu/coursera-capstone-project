@@ -1,5 +1,27 @@
 import './Footer.css';
 
+const navLinks = [
+    { href: '#header', label: 'Home' },
+    { href: '#about', label: 'About' },
+    { href: '#menu', label: 'Menu' },
+    { href: '#reservations', label: 'Reservations' },
+    { href: '#order', label: 'Order Online' },
+    { href: '#login', label: 'Login' }
+]
+
+const contactLinks = [
+    { href: '', label: 'Address' },
+    { href: '', label: 'Phone number' },
+    { href: '', label: 'Email' }
+]
+
+const socialLinks = [
+    { href: '', label: 'LinkedIn' },
+    { href: '', label: 'Instagram' },
+    { href: '', label: 'Facebook' },
+    { href: '', label: 'Twitter' }
+]
+
 function Footer() {
     return (
         <footer className="footer">
@@ -9,29 +31,25 @@ function Footer() {
                 <section className="footer__nav">
                     <h3> Navigation </h3>
 
-                    <a> Home </a>
-                    <a> About </a>
-                    <a> Menu </a>
-                    <a> Reservations </a>
-                    <a> Order online </a>
-                    <a> Login </a>
+                    {navLinks.map(({ href, label }) => (
+                        <a href={href}> {label} </a>
+                    ))}
                 </section>
 
                 <section className="footer__contact">
                     <h3> Contact </h3>
 
-                    <a> Address </a>
-                    <a> Phone number </a>
-                    <a> Email </a>
+                    {contactLinks.map(({ href, label }) => (
+                        <a href={href}> {label} </a>
+                    ))}
                 </section>
 
                 <section className="footer__social">
                     <h3> Social </h3>
 
-                    <a>LinkedIn</a>
-                    <a>Instagram</a>
-                    <a>Facebook</a>
-                    <a>Twitter</a>
+                    {socialLinks.map(({ href, label }) => (
+                        <a href={href}> {label} </a>
+                    ))}
                 </section>
             </section>
         </footer>
