@@ -28,4 +28,11 @@ h3 {
 
 p, a {
     font: 400 1vw/1.5vw 'Karla', sans-serif;
+
+img {
+    border-radius: 1.5vw / 1.5vw;
+}
+
+.subheading {
+    margin: 0 0 2vw 0;
 }
