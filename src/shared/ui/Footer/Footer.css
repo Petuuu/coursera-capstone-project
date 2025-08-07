@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--light-gray);
+    background-color: var(--highlight);
     display: flex;
     gap: 17vw;
     padding: var(--base-padding);

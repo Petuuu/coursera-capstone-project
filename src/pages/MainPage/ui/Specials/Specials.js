@@ -34,7 +34,7 @@ function Specials() {
                     />
 
                     <section className="dish__order-link">
-                        <a href="" style={{ fontSize: '0.8vw', color: 'var(--peach)' }}> Order for delivery </a>
+                        <a href="" style={{ fontSize: '0.8vw', color: 'var(--secondary1)' }}> Order for delivery </a>
                         <img src="delivery-icon.png" alt="Delivery icon" />
                     </section>
                 </Card>
@@ -60,7 +60,7 @@ function Specials() {
                     />
 
                     <section className="dish__order-link">
-                        <a href="" style={{ fontSize: '0.8vw', color: 'var(--peach)' }}> Order for delivery </a>
+                        <a href="" style={{ fontSize: '0.8vw', color: 'var(--secondary1)' }}> Order for delivery </a>
                         <img src="delivery-icon.png" alt="Delivery icon" />
                     </section>
                 </Card>
@@ -87,7 +87,7 @@ function Specials() {
                     />
 
                     <section className="dish__order-link">
-                        <a href="" style={{ fontSize: '0.8vw', color: 'var(--peach)' }}> Order for delivery </a>
+                        <a href="" style={{ fontSize: '0.8vw', color: 'var(--secondary1)' }}> Order for delivery </a>
                         <img src="delivery-icon.png" alt="Delivery icon" />
                     </section>
                 </Card>

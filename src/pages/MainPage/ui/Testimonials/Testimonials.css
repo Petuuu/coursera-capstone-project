@@ -1,5 +1,5 @@
 .testimonials {
-    background-color: var(--light-peach);
+    background-color: var(--secondary2);
     padding: var(--base-padding);
 }
 
@@ -14,7 +14,7 @@
 }
 
 .testimonials__review {
-    background-color: var(--light-gray);
+    background-color: var(--highlight);
     height: 12vw;
     width: 19vw;
     border-radius: var(--radius);

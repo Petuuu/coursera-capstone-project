@@ -12,7 +12,7 @@
 }
 
 .specials__online-menu {
-    color: var(--peach);
+    color: var(--secondary1);
 }
 
 .specials__dishes {
@@ -22,7 +22,7 @@
 }
 
 .dish__card {
-    background-color: var(--light-gray);
+    background-color: var(--highlight);
     overflow: hidden;
     width: 22vw;
     border-radius: var(--radius);
@@ -34,7 +34,7 @@
     text-decoration: underline;
     gap: 0.6vw;
     padding-top: 1vw;
-    color: var(--peach);
+    color: var(--secondary1);
 }
 
 .dish__order-link img {
