@@ -9,18 +9,18 @@
     padding-top: 6vw;
 }
 
-.testimonials__rating {
-    margin-bottom: 1vw;
-}
-
-.testimonials__review {
+.review__card {
     background-color: var(--highlight);
     min-height: 12vw;
     width: 19vw;
     border-radius: var(--radius);
 }
 
-.testimonials__avatar {
+.review__rating {
+    margin-bottom: 1vw;
+}
+
+.review__avatar {
     height: 3vw;
     width: auto;
 }
