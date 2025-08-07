@@ -1,5 +1,5 @@
 import './Testimonials.css';
-import { Avatar, Card } from 'antd';
+import { Flex, Avatar, Card } from 'antd';
 
 const { Meta } = Card;
 const reviews = [
@@ -34,7 +34,7 @@ function Testimonials() {
         <section className="testimonials">
             <h2> Testimonials </h2>
 
-            <section className="testimonials__reviews">
+            <Flex justify="space-between" className="testimonials__reviews">
                 {reviews.map(({ rating, avatar, name, description }) => (
                     <Card className="review__card">
                         <section className="review__rating"> Rating: {rating}/5 </section>
@@ -46,7 +46,7 @@ function Testimonials() {
                         />
                     </Card>
                 ))}
-            </section>
+            </Flex>
         </section>
     )
 }

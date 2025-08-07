@@ -1,9 +1,9 @@
 import "./Hero.css";
-import { Button } from "antd";
+import { Flex, Button } from "antd";
 
 function Hero() {
     return (
-        <section className="hero">
+        <Flex justify="space-between" align="center" className="hero">
             <section className="hero__main">
                 <h1>Little Lemon</h1>
                 <p className="subheading">Chicago</p>
@@ -25,7 +25,7 @@ function Hero() {
             <section>
                 <img src="hero-img.jpg" alt="A dish from Little Lemon" />
             </section>
-        </section>
+        </Flex>
     )
 }
 

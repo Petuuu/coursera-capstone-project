@@ -1,5 +1,5 @@
 import "./Specials.css";
-import { Card } from "antd";
+import { Flex, Card } from "antd";
 
 const { Meta } = Card;
 const dishes = [
@@ -16,9 +16,9 @@ const dishes = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
     },
     {
-        img: "bruschetta.jpg",
-        name: "Bruschetta",
-        price: "5,99€",
+        img: "lemon-dessert.png",
+        name: "Lemon dessert",
+        price: "12,00€",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
     }
 ]
@@ -26,12 +26,12 @@ const dishes = [
 function Specials() {
     return (
         <section className="specials">
-            <section className="specials__heading">
+            <Flex justify="space-between" align="center">
                 <h2> Specials </h2>
-                <a href=""> Online menu </a>
-            </section>
+                <a href="" className="specials__online-menu"> Online menu </a>
+            </Flex>
 
-            <section className="specials__dishes">
+            <Flex justify="space-between" className="specials__dishes">
                 {dishes.map(({ img, name, price, description }) => (
                     <Card
                         className="dish__card"
@@ -42,21 +42,21 @@ function Specials() {
                         <Meta
                             className="dish__text"
                             title={
-                                <section className="dish__title">
+                                <Flex justify="space-between" >
                                     <h3> {name} </h3>
                                     <h3 className="dish__price"> {price} </h3>
-                                </section>
+                                </Flex>
                             }
                             description={description}
                         />
 
-                        <section className="dish__order">
+                        <Flex justify="left" className="dish__order">
                             <a href=""> Order for delivery </a>
                             <img src="delivery-icon.png" alt="Delivery icon" />
-                        </section>
+                        </Flex>
                     </Card>
                 ))}
-            </section>
+            </Flex>
         </section>
     )
 }

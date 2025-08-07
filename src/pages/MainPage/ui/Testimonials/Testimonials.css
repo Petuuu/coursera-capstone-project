@@ -4,8 +4,6 @@
 }
 
 .testimonials__reviews {
-    display: flex;
-    justify-content: space-between;
     padding-top: 6vw;
 }
 

@@ -1,4 +1,5 @@
 import "./Header.css";
+import { Flex } from 'antd';
 
 const navLinks = [
     { href: "#header", label: "HOME" },
@@ -11,19 +12,17 @@ const navLinks = [
 
 function Header() {
     return (
-        <header className="header">
+        <Flex align="center" className="header">
             <section>
                 <img src="nav-logo.svg" alt="Little Lemon logo" />
             </section>
 
-            <nav>
-                <menu>
+            <Flex justify="space-between" className="header__menu">
                     {navLinks.map(({ href, label }) => (
-                        <li><a href={href}> {label} </a></li>
+                        <a href={href}> {label} </a>
                     ))}
-                </menu>
-            </nav>
-        </header>
+            </Flex>
+        </Flex>
     )
 }
 

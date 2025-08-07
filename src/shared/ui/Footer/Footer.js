@@ -1,4 +1,5 @@
 import './Footer.css';
+import { Flex } from 'antd';
 
 const footerLinks = [
     {
@@ -36,21 +37,21 @@ const footerLinks = [
 
 function Footer() {
     return (
-        <footer className="footer">
+        <Flex gap="17vw" className="footer">
             <img src="footer-logo.png" alt="Logo" />
 
-            <section className="footer__links">
+            <Flex gap="10vw">
                 {footerLinks.map(({ className, title, links }) => (
                     <section className={className}>
                         <h3> {title} </h3>
-                        
+
                         {links.map(({ href, label }) => (
                             <a href={href}> {label} </a>
                         ))}
                     </section>
                 ))}
-            </section>
-        </footer>
+            </Flex>
+        </Flex>
     );
 }
 

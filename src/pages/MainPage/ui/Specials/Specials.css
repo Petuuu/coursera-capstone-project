@@ -1,23 +1,13 @@
 .specials {
-    display: flex;
-    flex-direction: column;
     padding: var(--base-padding);
-}
-
-.specials__heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
 }
 
 .specials__online-menu {
     color: var(--secondary1);
+    text-decoration: underline;
 }
 
 .specials__dishes {
-    display: flex;
-    justify-content: space-between;
     padding-top: 6vw;
 }
 
@@ -31,18 +21,11 @@
     min-height: 6.5vw;
 }
 
-.dish__title {
-    display: flex;
-    justify-content: space-between;
-}
-
 .dish__price {
     color: #DDBE25;
 }
 
 .dish__order {
-    display: flex;
-    justify-content: left;
     text-decoration: underline;
     gap: 0.6vw;
     padding-top: 1vw;
