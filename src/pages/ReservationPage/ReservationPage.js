@@ -7,6 +7,7 @@ function ReservationPage() {
         <>
             <Separator />
             <ReservationForm />
+            <Separator />
         </>
     )
 }
