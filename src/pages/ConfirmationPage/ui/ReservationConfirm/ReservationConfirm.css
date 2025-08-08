@@ -1,0 +1,8 @@
+.confirmation {
+    background-color: var(--highlight);
+    padding: var(--base-padding);
+}
+
+.confirmation__text {
+    height: 45vw;
+}
