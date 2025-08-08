@@ -1,6 +1,8 @@
 import './ReservationForm.css';
 import { Flex, Form, Input, Select, Button  } from 'antd';
 import { requiredFieldRule } from '../../../../shared/utils/formRules.ts';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const { Item } = Form;
 const { Option } = Select;
@@ -19,8 +21,12 @@ const occasions = [
 ];
 
 function ReservationForm() {
+    const [formValues, setFormValues] = useState(null);
+    const navigate = useNavigate();
+
     const handleSubmit = (values) => {
-        console.log('Form values:', values);
+        setFormValues(values);
+        navigate('/confirmation');
     };
 
     return (
