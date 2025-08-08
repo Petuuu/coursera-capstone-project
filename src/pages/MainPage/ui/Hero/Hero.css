@@ -7,15 +7,6 @@
     padding: var(--base-padding);
 }
 
-.hero__button {
-    background-color: var(--primary2);
-    margin: 2vw 0;
-    padding: 2vw 1.7vw;
-    border: none;
-    border-radius: var(--radius);
-    font: 400 1.2vw/1.5vw 'Karla', sans-serif;
-}
-
 .hero img {
     height: 23vw;
     padding-right: 10vw;

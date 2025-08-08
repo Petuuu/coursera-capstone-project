@@ -6,7 +6,7 @@ const footerLinks = [
         className: "footer__nav",
         title: "Navigation",
         links: [
-            { href: "#header", label: "Home" },
+            { href: "/", label: "Home" },
             { href: "#about", label: "About" },
             { href: "#menu", label: "Menu" },
             { href: "#reservations", label: "Reservations" },

@@ -1,0 +1,8 @@
+.separator {
+  background-color: var(--highlight);
+}
+
+.separator__line {
+  width: 75vw;
+  margin: 0 auto;
+}

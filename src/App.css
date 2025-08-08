@@ -37,3 +37,13 @@ img {
 .subheading {
     margin-bottom: 2vw;
 }
+
+.button {
+    background-color: var(--primary2);
+    color: black;
+    margin: 2vw 0;
+    padding: 2vw 1.7vw;
+    border: none;
+    border-radius: var(--radius);
+    font: 400 1.2vw/1.5vw 'Karla', sans-serif;
+}
