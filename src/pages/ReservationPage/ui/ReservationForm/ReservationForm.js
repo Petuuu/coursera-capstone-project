@@ -4,6 +4,19 @@ import { requiredFieldRule } from '../../../../shared/utils/formRules.ts';
 
 const { Item } = Form;
 const { Option } = Select;
+const times = [
+    {value: '17:00', label: '17:00'},
+    {value: '18:00', label: '18:00'},
+    {value: '19:00', label: '19:00'},
+    {value: '20:00', label: '20:00'},
+    {value: '21:00', label: '21:00'},
+    {value: '22:00', label: '22:00'},
+]
+const occasions = [
+    {value: 'none', label: 'None'},
+    {value: 'birthday', label: 'Birthday'},
+    {value: 'anniversary', label: 'Anniversary'},
+];
 
 function ReservationForm() {
     const handleSubmit = (values) => {
@@ -27,12 +40,9 @@ function ReservationForm() {
 
                     <Item name="time" label="Time" wrapperCol={{ span: 3 }} rules={requiredFieldRule('Time')}>
                         <Select>
-                            <Option value="17:00"> 17:00 </Option>
-                            <Option value="18:00"> 18:00 </Option>
-                            <Option value="19:00"> 19:00 </Option>
-                            <Option value="20:00"> 20:00 </Option>
-                            <Option value="21:00"> 21:00 </Option>
-                            <Option value="22:00"> 22:00 </Option>
+                            {times.map(({ value, label }) => (
+                                <Option value={value}> {label} </Option>
+                            ))}
                         </Select>
                     </Item>
 
@@ -42,9 +52,9 @@ function ReservationForm() {
 
                     <Item name="occasion" label="Occasion" wrapperCol={{ span: 5 }} rules={requiredFieldRule('Occasion')}>
                         <Select id="occasion">
-                            <Option value="none"> None </Option>
-                            <Option value="birthday"> Birthday </Option>
-                            <Option value="anniversary"> Anniversary </Option>
+                            {occasions.map(({ value, label }) => (
+                                <Option value={value}> {label} </Option>
+                            ))}
                         </Select>
                     </Item>
 
