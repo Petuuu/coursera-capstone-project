@@ -1,5 +1,6 @@
 import './ReservationForm.css';
 import { Flex, Form, Input, Select, Button  } from 'antd';
+import { requiredFieldRule } from '../../../../shared/utils/formRules.ts';
 
 const { Item } = Form;
 const { Option } = Select;
@@ -20,11 +21,11 @@ function ReservationForm() {
                 labelCol={{ span: 6 }}
             >
                 <Flex vertical gap="1vw" align="left" className="reservation__form">
-                    <Item name="date" label="Date" wrapperCol={{ span: 5 }} rules={[{ required: true, message: 'Please select a date!' }]}>
+                    <Item name="date" label="Date" wrapperCol={{ span: 5 }} rules={requiredFieldRule('Date')}>
                         <Input type="date" />
                     </Item>
 
-                    <Item name="time" label="Time" wrapperCol={{ span: 3 }} rules={[{ required: true, message: 'Please select a time!' }]}>
+                    <Item name="time" label="Time" wrapperCol={{ span: 3 }} rules={requiredFieldRule('Time')}>
                         <Select>
                             <Option value="17:00"> 17:00 </Option>
                             <Option value="18:00"> 18:00 </Option>
@@ -35,11 +36,11 @@ function ReservationForm() {
                         </Select>
                     </Item>
 
-                    <Item name="guests" label="Guests" wrapperCol={{ span: 2 }} rules={[{ required: true, message: 'Please select the number of guests!' }]}>
+                    <Item name="guests" label="Guests" wrapperCol={{ span: 2 }} rules={requiredFieldRule('Guests')}>
                         <Input type="number" min="1" max="10" />
                     </Item>
 
-                    <Item name="occasion" label="Occasion" wrapperCol={{ span: 5 }} rules={[{ required: true, message: 'Please select an occasion!' }]}>
+                    <Item name="occasion" label="Occasion" wrapperCol={{ span: 5 }} rules={requiredFieldRule('Occasion')}>
                         <Select id="occasion">
                             <Option value="none"> None </Option>
                             <Option value="birthday"> Birthday </Option>
