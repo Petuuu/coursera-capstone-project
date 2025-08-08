@@ -1,14 +1,14 @@
 import 'antd/dist/reset.css';
 import './App.css';
 import Header from './shared/ui/Header/Header';
-import MainPage from './pages/MainPage/MainPage';
+import ConfirmationPage from './pages/ConfirmationPage/ConfirmationPage';
 import Footer from './shared/ui/Footer/Footer';
 
 function App() {
   return (
     <>
       <Header />
-      <MainPage />
+      <ConfirmationPage />
       <Footer />
     </>
   );
