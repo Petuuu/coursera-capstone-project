@@ -1,11 +1,11 @@
 import Separator from '../../shared/ui/Separator/Separator';
 import ReservationForm from './ui/ReservationForm/ReservationForm';
 
-function ReservationPage() {
+function ReservationPage({ availableTimes }) {
     return (
         <>
             <Separator />
-            <ReservationForm />
+            <ReservationForm availableTimes={availableTimes} />
             <Separator />
         </>
     )

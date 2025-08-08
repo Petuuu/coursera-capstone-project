@@ -6,21 +6,13 @@ import { useState } from 'react';
 
 const { Item } = Form;
 const { Option } = Select;
-const times = [
-    {value: '17:00', label: '17:00'},
-    {value: '18:00', label: '18:00'},
-    {value: '19:00', label: '19:00'},
-    {value: '20:00', label: '20:00'},
-    {value: '21:00', label: '21:00'},
-    {value: '22:00', label: '22:00'},
-]
 const occasions = [
     {value: 'none', label: 'None'},
     {value: 'birthday', label: 'Birthday'},
     {value: 'anniversary', label: 'Anniversary'},
 ];
 
-function ReservationForm() {
+function ReservationForm({ availableTimes }) {
     const [formValues, setFormValues] = useState(null);
     const navigate = useNavigate();
 
@@ -46,7 +38,7 @@ function ReservationForm() {
 
                     <Item name="time" label="Time" wrapperCol={{ span: 3 }} rules={requiredFieldRule('Time')}>
                         <Select>
-                            {times.map(({ value, label }) => (
+                            {availableTimes.map(({ value, label }) => (
                                 <Option value={value}> {label} </Option>
                             ))}
                         </Select>
