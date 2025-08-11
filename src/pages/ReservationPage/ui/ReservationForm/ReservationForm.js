@@ -2,7 +2,6 @@ import './ReservationForm.css';
 import { Flex, Form, Input, Select, Button  } from 'antd';
 import { requiredFieldRule } from '../../../../shared/utils/formRules.ts';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
 
 const { Item } = Form;
 const { Option } = Select;
@@ -12,12 +11,11 @@ const occasions = [
     {value: 'anniversary', label: 'Anniversary'},
 ];
 
-function ReservationForm({ availableTimes }) {
-    const [formValues, setFormValues] = useState(null);
+function ReservationForm({ availableTimes, dispatch }) {
     const navigate = useNavigate();
 
     const handleSubmit = (values) => {
-        setFormValues(values);
+        dispatch({ type: "update", payload: values.time})
         navigate('/confirmation');
     };
 
