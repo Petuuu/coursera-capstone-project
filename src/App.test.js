@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
-import { initializeTimes } from './App';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { updateTimes, initializeTimes } from './App';
 import ReservationForm from './pages/ReservationPage/ReservationPage';
 
 beforeAll(() => {
@@ -19,9 +19,9 @@ beforeAll(() => {
 
 test("Renders the reservation form date", () => {
 	render(
-      <BrowserRouter>
+      <Router>
         <ReservationForm />
-      </BrowserRouter>
+      </Router>
     );
 
   const date = screen.getByLabelText("Date");
@@ -30,9 +30,9 @@ test("Renders the reservation form date", () => {
 
 test("initializeTimes returns correct times", () => {
 	render(
-      <BrowserRouter>
+      <Router>
         <ReservationForm />
-      </BrowserRouter>
+      </Router>
     );
 
 	const times = initializeTimes();
@@ -45,3 +45,17 @@ test("initializeTimes returns correct times", () => {
 		{value: '22:00', label: '22:00'}
 	]);
 })
+
+test("updateTimes removes correct time", () => {
+	render(
+		<Router>
+			<ReservationForm />
+		</Router>
+	);
+
+	const initial = initializeTimes();
+	const action = { type: 'update', payload: '18:00' };
+	const result = updateTimes(initial, action);
+
+	expect(result).not.toContainEqual({ value: '18:00', label: '18:00' });
+});
