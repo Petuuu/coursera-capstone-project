@@ -14,10 +14,13 @@ const occasions = [
 function ReservationForm({ availableTimes, dispatch }) {
     const navigate = useNavigate();
 
-    const handleSubmit = (values) => {
-        dispatch({ type: "update", payload: values.time})
+    const handleSubmit = () => {
         navigate('/confirmation');
     };
+
+    const handleDateChange = (e) => {
+        dispatch({ type: "update", date: e.target.value });
+    }
 
     return (
         <Flex vertical align="center" className="reservation">
@@ -31,13 +34,13 @@ function ReservationForm({ availableTimes, dispatch }) {
             >
                 <Flex vertical gap="1vw" align="left" className="reservation__form">
                     <Item name="date" label="Date" wrapperCol={{ span: 5 }} rules={requiredFieldRule('Date')}>
-                        <Input type="date" />
+                        <Input type="date" onChange={handleDateChange} />
                     </Item>
 
                     <Item name="time" label="Time" wrapperCol={{ span: 3 }} rules={requiredFieldRule('Time')}>
                         <Select>
-                            {availableTimes.map(({ value, label }) => (
-                                <Option value={value}> {label} </Option>
+                            {availableTimes.map((time) => (
+                                <Option value={time}> {time} </Option>
                             ))}
                         </Select>
                     </Item>

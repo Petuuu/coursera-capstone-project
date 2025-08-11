@@ -8,32 +8,17 @@ import ConfirmationPage from './pages/ConfirmationPage/ConfirmationPage';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { useReducer } from 'react';
 
-export function updateTimes(state, action) {
-	let newState = state;
-
-	if (action.type === "update") {
-		newState = state.filter(time => time.value !== action.payload);
-	}
-
-	window.localStorage.setItem("availableTimes", JSON.stringify(newState));
-	return newState;
+export function initializeTimes() {
+	const today = new Date();
+	return window.fetchAPI(today);
 }
 
-
-export function initializeTimes() {
-	const stored = window.localStorage.getItem("availableTimes");
-
-	if (stored) {
-		return JSON.parse(stored);
+export function updateTimes(state, action) {
+	if (action.type === "update") {
+		const date = new Date(action.date);
+		return window.fetchAPI(date);
 	}
-	return [
-		{value: '17:00', label: '17:00'},
-		{value: '18:00', label: '18:00'},
-		{value: '19:00', label: '19:00'},
-		{value: '20:00', label: '20:00'},
-		{value: '21:00', label: '21:00'},
-		{value: '22:00', label: '22:00'},
-	];
+	return state;
 }
 
 function App() {
