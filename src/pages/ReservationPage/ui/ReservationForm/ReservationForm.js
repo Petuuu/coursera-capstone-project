@@ -3,16 +3,17 @@ import { Flex, Form, Input, Select, Button  } from 'antd';
 import { requiredFieldRule } from '../../../../shared/utils/formRules.ts';
 import { useNavigate } from 'react-router-dom';
 import { useReducer } from 'react';
+import { fetchAPI } from '../../../../shared/utils/api/api.js';
 
 export function initializeTimes() {
 	const today = new Date();
-	return window.fetchAPI(today);
+	return fetchAPI(today);
 }
 
 export function updateTimes(state, action) {
 	if (action.type === "update") {
 		const date = new Date(action.date);
-		return window.fetchAPI(date);
+		return fetchAPI(date);
 	}
 	return state;
 }
