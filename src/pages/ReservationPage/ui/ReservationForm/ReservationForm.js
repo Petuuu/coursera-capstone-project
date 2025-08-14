@@ -1,17 +1,24 @@
 import './ReservationForm.css';
 import { Flex, Form, Input, Select, Button  } from 'antd';
 import { requiredFieldRule } from '../../../../shared/utils/formRules.ts';
+import { useNavigate } from 'react-router-dom';
+import { useReducer } from 'react';
+
+export function initializeTimes() {
+	const today = new Date();
+	return window.fetchAPI(today);
+}
+
+export function updateTimes(state, action) {
+	if (action.type === "update") {
+		const date = new Date(action.date);
+		return window.fetchAPI(date);
+	}
+	return state;
+}
 
 const { Item } = Form;
 const { Option } = Select;
-const times = [
-    {value: '17:00', label: '17:00'},
-    {value: '18:00', label: '18:00'},
-    {value: '19:00', label: '19:00'},
-    {value: '20:00', label: '20:00'},
-    {value: '21:00', label: '21:00'},
-    {value: '22:00', label: '22:00'},
-]
 const occasions = [
     {value: 'none', label: 'None'},
     {value: 'birthday', label: 'Birthday'},
@@ -19,9 +26,16 @@ const occasions = [
 ];
 
 function ReservationForm() {
-    const handleSubmit = (values) => {
-        console.log('Form values:', values);
+    const navigate = useNavigate();
+    const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
+
+    const handleSubmit = () => {
+        navigate('/confirmation');
     };
+
+    const handleDateChange = (e) => {
+        dispatch({ type: "update", date: e.target.value });
+    }
 
     return (
         <Flex vertical align="center" className="reservation">
@@ -35,13 +49,13 @@ function ReservationForm() {
             >
                 <Flex vertical gap="1vw" align="left" className="reservation__form">
                     <Item name="date" label="Date" wrapperCol={{ span: 5 }} rules={requiredFieldRule('Date')}>
-                        <Input type="date" />
+                        <Input type="date" onChange={handleDateChange} />
                     </Item>
 
                     <Item name="time" label="Time" wrapperCol={{ span: 3 }} rules={requiredFieldRule('Time')}>
                         <Select>
-                            {times.map(({ value, label }) => (
-                                <Option value={value}> {label} </Option>
+                            {availableTimes.map((time) => (
+                                <Option value={time}> {time} </Option>
                             ))}
                         </Select>
                     </Item>
