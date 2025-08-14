@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { updateTimes, initializeTimes } from './App';
+import { updateTimes, initializeTimes } from './pages/ReservationPage/ui/ReservationForm/ReservationForm';
+import { fetchAPI } from './shared/utils/api/api';
 import ReservationForm from './pages/ReservationPage/ReservationPage';
 
 beforeAll(() => {
@@ -35,15 +36,11 @@ test("initializeTimes returns correct times", () => {
       </Router>
     );
 
-	const times = initializeTimes();
-	expect(times).toEqual([
-		{value: '17:00', label: '17:00'},
-		{value: '18:00', label: '18:00'},
-		{value: '19:00', label: '19:00'},
-		{value: '20:00', label: '20:00'},
-		{value: '21:00', label: '21:00'},
-		{value: '22:00', label: '22:00'}
-	]);
+	const date = new Date('2025-08-15');
+	const times = fetchAPI(date);
+	const expectedTimes = ["17:00", "17:30", "20:30", "22:30"];
+
+	expect(times).toEqual(expectedTimes);
 })
 
 test("updateTimes removes correct time", () => {
@@ -54,8 +51,8 @@ test("updateTimes removes correct time", () => {
 	);
 
 	const initial = initializeTimes();
-	const action = { type: 'update', payload: '18:00' };
+	const action = { type: 'update', payload: initial[0] };
 	const result = updateTimes(initial, action);
 
-	expect(result).not.toContainEqual({ value: '18:00', label: '18:00' });
+	expect(result).not.toContainEqual(initial[0]);
 });
